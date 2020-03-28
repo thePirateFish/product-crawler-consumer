@@ -1,0 +1,1 @@
+rm consumer.zip && zip -r consumer.zip . -x ../product-crawler-consumer/__pycache__/ -x ../product-crawler-consumer/.vscode/ -x ../product-crawler-consumer/.vscode/settings.json -x ../product-crawler-consumer/zip.sh -x "*.DS_Store"
