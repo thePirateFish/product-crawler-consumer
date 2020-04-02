@@ -1,7 +1,7 @@
 from typing import List, Dict
 
 class Product(object):
-    def __init__(self, sku: str, title=None, desc=None, image_urls=None, url=None, tags=None, category=None, specs=None,  price=None, avail=None, options=None, artist_info=None, care_info=None):
+    def __init__(self, sku: str, title=None, desc=None, image_urls=None, url=None, tags=None, category=None, specs=None,  price=None, avail=None, options=None, artist_info=None, care_info=None, details=None):
         self.sku = sku
         self.title = title
         self.description = desc
@@ -15,6 +15,7 @@ class Product(object):
         self.price = price
         self.availability = avail
         self.options = options
+        self.details = details
 
     def to_dict(self):
         return {'sku': self.sku,
